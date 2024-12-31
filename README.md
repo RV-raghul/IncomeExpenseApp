@@ -21,6 +21,7 @@ The app allows users to enter their income, add expense details, and view a summ
    - Total Expenses
    - Remaining Balance
 4. **Expense Table**: All added expenses are listed in a table format at the bottom of the page.
+5. **Filter**: Filter option is added to search an particular expense item in the table.
 
 ## User Interface
 1. **Income Input Field**: A single input box for users to enter their total income.

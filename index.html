@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link 
+        href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+        rel='stylesheet'
+    >
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Income Expense App</h2>
+        <div class="error_message">
+            <p> Please Enter Income Amount</p>
+        </div>
+       
+        <div class="budget_content">
+                <div class="ur_budget">
+                    <form>
+                        <label >Your Income:</label>
+                        <input type="number" placeholder="Enter your Income" class="budget_input">
+                        <button class="btn" id="btn_budget">Calculate</button>
+                    </form>
+                </div>
+
+                <div class="ur_expenses">
+                    <form id="myForm">
+                        <label >Expenses Details:</label>
+                        <input type="text" name="expenseItem" placeholder="Enter Desc" class="expenses_input" id ="expenses_input">
+                        <input type="number" name="expenseAmount" placeholder="Enter Amount" class="expenses_amount" id = "expenses_amount">
+                        <button class="btn" id="btn_expenses" type="submit">Add Expenses</button>
+                    </form>
+                </div>    
+                <div class="ur_expenses" id="modify_expenses">
+                    <form id="modifyForm">
+                        <label >Modify Details:</label>
+                        <input type="text" name="expenseItem" placeholder="Enter Desc" class="expenses_input" id ="modify_expenses_input">
+                        <input type="number" name="expenseAmount" placeholder="Enter Amount" class="expenses_amount" id = "modify_expenses_amount">
+                        <button class="btn" id="btn_expenses" type="submit">Modify Expenses</button>
+                    </form>
+                </div>    
+        </div>
+
+        
+      
+
+        <!--  Cards -->
+          <ul class="cards">
+            <li>
+                <i class='bx bx-money'></i>
+                <span class="info">
+                    <h3> <span>$</span> <span class="budget_card">0</span></h3>
+                    <p>Income</p>
+                </span>
+            </li>
+            <li>
+                <i class='bx bx-credit-card'></i>
+                <span class="info">
+                    <h3> <span>$</span> <span class="expenses_card" id="expenses_card">0</span></h3>
+                    <p>Expenses</p>
+                </span>
+            </li>
+            <li>
+                <i class='bx bx-dollar'></i>
+                <span class="info">
+                    <h3> <span>$</span> <span class="balance_card">0</span></h3>
+                    <p>Balance</p>
+                </span>
+            </li>
+          </ul>
+
+
+        <!-- <div class="tbl_content">
+            <h3>Expense Details</h3>
+            <div class="tbl_data">
+                <ul class="tbl_tr_content">
+                    <li>1</li>
+                    <li>Gaming Mouse</li>
+                    <li><span>$</span>600</li>
+                    <li>
+                        <button type="button" class="btn_edit">Edit</button>
+                        <button type="button" class="btn_delete">Delete</button>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div> -->
+
+        
+        <!-- <td style="width: ;"></td> -->
+
+        <div class="tbl_content">
+            <h3 style="color: white;">Expense Details</h3>
+            <div class="filter-container">
+                <input type="text" id="filter-input" placeholder="Filter by expense item" />
+                <button id="btn_filter">Filter</button>
+            </div>
+            <div class="tbl_data">
+                <table class="tbl_content" id="">
+                    <tbody class="" id="table-body">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+  
+    
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
